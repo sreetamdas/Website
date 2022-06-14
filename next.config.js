@@ -6,6 +6,9 @@
 
 const nextConfig = {
   productionBrowserSourceMaps: true,
+  experimental: {
+    optimizeCss: true,
+  },
   images: {
     domains: [
       'res.cloudinary.com',
