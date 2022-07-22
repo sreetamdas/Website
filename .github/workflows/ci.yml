@@ -13,6 +13,21 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 16.10.0
+      - name: Create .env file
+        run: |
+          touch .env
+          echo NOTION_TOKEN=${{ secrets.NOTION_TOKEN }} >> .env
+          echo NOTION_BLOG_DATABASE_ID=${{ secrets.NOTION_BLOG_DATABASE_ID }} >> .env
+          echo NOTION_BOOKS_DATABASE_ID=${{ secrets.NOTION_BOOKS_DATABASE_ID }} >> .env
+          echo NOTION_PROJECTS_DATABASE_ID=${{ secrets.NOTION_PROJECTS_DATABASE_ID }} >> .env
+          echo NOTION_ENVIRONMENT=${{ secrets.NOTION_ENVIRONMENT }} >> .env
+          echo SPOTIFY_CLIENT_ID=${{ secrets.SPOTIFY_CLIENT_ID }} >> .env
+          echo SPOTIFY_CLIENT_SECRET=${{ secrets.SPOTIFY_CLIENT_SECRET }} >> .env
+          echo SPOTIFY_REFRESH_TOKEN=${{ secrets.SPOTIFY_REFRESH_TOKEN }} >> .env
+          echo SPOTIFY_NOW_PLAYING_ENDPOINT=${{ secrets.SPOTIFY_NOW_PLAYING_ENDPOINT }} >> .env
+          echo SPOTIFY_TOKEN_ENDPOINT=${{ secrets.SPOTIFY_TOKEN_ENDPOINT }} >> .env
+          echo SPOTIFY_TOP_TRACKS_ENDPOINT=${{ secrets.SPOTIFY_TOP_TRACKS_ENDPOINT }} >> .env
+          echo SPOTIFY_TOP_ARTISTS_ENDPOINT=${{ secrets.SPOTIFY_TOP_ARTISTS_ENDPOINT }} >> .env
       - name: yarn install, build
         run: |
           npm i -g yarn
