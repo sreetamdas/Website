@@ -12,9 +12,10 @@ jobs:
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: 14.18.3
+          node-version: 16.10.0
       - name: yarn install, build
         run: |
+          npm i -g yarn
           yarn
           yarn build
       - name: run Lighthouse CI
