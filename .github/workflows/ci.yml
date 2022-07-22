@@ -2,7 +2,7 @@ name: CI
 on:
   push:
     branches:
-      - lhci
+      - master
 jobs:
   lhci:
     name: Lighthouse
@@ -33,6 +33,9 @@ jobs:
           npm i -g yarn
           yarn
           yarn build
+      - name: Sync Master
+        run: |
+          yarn sync-master
       - name: run Lighthouse CI
         run: |
           yarn lhci

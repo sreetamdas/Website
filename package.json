@@ -23,6 +23,7 @@
     "rehype-slug": "^5.0.1",
     "remark-gfm": "^3.0.1",
     "sharp": "^0.30.4",
+    "simple-git": "^3.10.0",
     "swr": "^1.3.0"
   },
   "devDependencies": {
@@ -56,7 +57,7 @@
     "export": "next export",
     "format": "prettier --write .  --ignore-path .gitignore",
     "lint": "eslint --fix ./src/**/*",
-  "lhci": "lhci autorun", 
+    "lhci": "lhci autorun",
     "analyze": "cross-env ANALYZE=true yarn build"
   },
   "keywords": [],

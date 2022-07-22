@@ -1,0 +1,90 @@
+yarn run v1.22.19
+$ next build
+info  - Loaded env from D:\Codes\FrontEnd\Next\Website\.env
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+info  - Compiled successfully
+info  - Collecting page data...
+info  - Generating static pages (0/21)
+[32mInlined 5.15 kB (18% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 177.4474
+[32mInlined 5.39 kB (18% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 197.7414
+[32mInlined 5.55 kB (19% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 260.5185
+[32mInlined 5.64 kB (19% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 348.0901
+[32mInlined 5.87 kB (20% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 290.4228
+info  - Generating static pages (5/21)
+[32mInlined 7.03 kB (24% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 262.0152
+[32mInlined 9.24 kB (32% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 203.2416
+[32mInlined 9.18 kB (32% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 155.15
+[32mInlined 11.4 kB (39% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 235.4787
+[32mInlined 10.8 kB (38% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 245.3927
+info  - Generating static pages (10/21)
+[32mInlined 1.8 kB (6% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 78.7309
+[32mInlined 1.8 kB (6% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 79.7186
+[32mInlined 12 kB (42% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 278.131
+[32mInlined 9.47 kB (33% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 93.894
+[32mInlined 10.7 kB (37% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 141.501
+info  - Generating static pages (15/21)
+[32mInlined 10.9 kB (38% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 108.5235
+[32mInlined 11.4 kB (40% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 130.7416
+[32mInlined 11.3 kB (39% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 117.3198
+[32mInlined 7.39 kB (25% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 118.7545
+[32mInlined 11.1 kB (39% of original 28.4 kB) of _next/static/css/6c56d48e76f0bb53.css.[39m
+Time 165.386
+info  - Generating static pages (21/21)
+info  - Finalizing page optimization...
+
+Page                                                                                                   Size     First Load JS
+┌ ● / (ISR: 120 Seconds) (2214 ms)                                                                     390 B           107 kB
+├   /_app                                                                                              0 B            89.9 kB
+├ ○ /404                                                                                               195 B          90.1 kB
+├ λ /api/books/suggest                                                                                 0 B            89.9 kB
+├ λ /api/spotify/nowPlaying                                                                            0 B            89.9 kB
+├ λ /api/views                                                                                         0 B            89.9 kB
+├ ● /blog (ISR: 10 Seconds) (1836 ms)                                                                  492 B           107 kB
+├ ● /blog/[slug] (ISR: 10 Seconds) (41536 ms)                                                          75.9 kB         182 kB
+├   ├ /blog/setup-tailwind-css-with-turborepo (4414 ms)
+├   ├ /blog/authentication-and-protected-routes-with-remix-auth-0-and-prisma (4107 ms)
+├   ├ /blog/lets-add-a-command-palette-on-our-web (3988 ms)
+├   ├ /blog/creating-dynamic-open-graph-images-for-your-blogs (3967 ms)
+├   ├ /blog/remark (3789 ms)
+├   ├ /blog/vs-code-extension-that-enable-symbols-and-outlines-support-for-your-react-files (3785 ms)
+├   ├ /blog/write-markdown-in-next-js (3716 ms)
+├   └ [+6 more paths] (avg 2295 ms)
+├ ● /books (ISR: 100 Seconds) (2092 ms)                                                                1.5 kB          108 kB
+├ ○ /colophon (434 ms)                                                                                 1.13 kB         107 kB
+├ λ /rss.xml                                                                                           253 B          90.1 kB
+├ λ /sitemap.xml                                                                                       256 B          90.1 kB
+├ ● /spotify (ISR: 21600 Seconds) (1176 ms)                                                            905 B           107 kB
+└ ○ /uses (418 ms)                                                                                     264 B           107 kB
++ First Load JS shared by all                                                                          89.9 kB
+  ├ chunks/framework-24fda4117f092221.js                                                               42.1 kB
+  ├ chunks/main-bca823c55bc9c5ec.js                                                                    30.9 kB
+  ├ chunks/pages/_app-dde28873a485b41d.js                                                              15.1 kB
+  ├ chunks/webpack-4cec60d17a2335a1.js                                                                 1.82 kB
+  └ css/6c56d48e76f0bb53.css                                                                           5.37 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+   (ISR)     incremental static regeneration (uses revalidate in getStaticProps)
+
+Done in 57.52s.
