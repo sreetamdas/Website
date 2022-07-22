@@ -45,7 +45,7 @@ export const NowPlaying = () => {
               rel='noopener noreferrer'
               className='truncate text-skin-secondary underline-offset-4 hover:underline'>
               {track?.isPlaying ? track.title : 'Not Playing'}{' '}
-              {track?.title && (
+              {track?.isPlaying && track?.artist && (
                 <React.Fragment>
                   <span className='text-skin-primary-muted'> by </span>{' '}
                   {track.isPlaying ? track?.artist : 'Unknown'}
@@ -65,20 +65,16 @@ export const NowPlaying = () => {
           </div>
           <div
             onClick={handlePlay}
-            className='mr-3 inline cursor-pointer text-skin-primary-muted underline-offset-4 hover:underline'>
+            className='inline cursor-pointer text-skin-primary-muted underline-offset-4 hover:underline'>
             {isPlaying
               ? 'Stop preview'
               : track?.isPlaying && track?.previewUrl
-              ? 'Listen to Preview'
-              : 'No preview available'}
+              ? 'Listen preview'
+              : 'No preview'}
           </div>
-          <Link href='https://shbm.fyi/sp' passHref>
-            <a
-              className='inline text-skin-primary-muted underline-offset-4 hover:underline'
-              target='_blank'
-              rel='noopener noreferrer'>
-              View Profile
-              <DiagonalArrow className='inline' />
+          <Link href='/spotify' passHref>
+            <a className='mx-3 inline text-skin-primary-muted underline-offset-4 hover:underline'>
+              Check Stats
             </a>
           </Link>
         </div>
